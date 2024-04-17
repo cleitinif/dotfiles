@@ -1,0 +1,17 @@
+# themes from https://github.com/alacritty/alacritty-theme
+
+# import = ["/Users/mischa/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+import = ["~/.config/alacritty/themes/themes/nordic.toml"]
+
+[font]
+size = 12
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[window]
+decorations = "none"
+
+[window.padding]
+x = 5
+y = 0

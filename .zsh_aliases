@@ -1,0 +1,28 @@
+alias v=nvim
+alias repos="cd $REPOS"
+alias c="clear"
+
+alias ls='ls --color=auto'
+alias ll='ls -la'
+alias la='ls -lathr'
+
+alias last='find . -type f -not -path "*/\.*" -exec ls -lrt {} +'
+alias t='tmux'
+alias e='exit'
+
+# git
+alias gp='git pull'
+alias gs='git status'
+alias lg='lazygit'
+
+# terraform
+alias tf='terraform'
+alias tp='terraform plan'
+
+
+# kubectl
+alias k='kubectl'
+source <(kubectl completion zsh)
+kubectl completion zsh > "${fpath[1]}/_kubectl"
+
+alias kgp='kubectl get pods'
