@@ -22,7 +22,4 @@ alias tp='terraform plan'
 
 # kubectl
 alias k='kubectl'
-source <(kubectl completion zsh)
-kubectl completion zsh > "${fpath[1]}/_kubectl"
-
 alias kgp='kubectl get pods'

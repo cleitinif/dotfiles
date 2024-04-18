@@ -10,10 +10,10 @@ fi
 #
 
 # If not running interactively, don't do anything
-#[[ $- != *i* ]] && return
+[[ $- != *i* ]] && return
 
 # Set to superior editing mode
-#set -o vi
+set -o vi
 
 # keybinds
 clear-terminal() { tput reset; zle redisplay; }
@@ -29,7 +29,7 @@ export GITUSER="cleitinif"
 
 export GOBIN="$HOME/.local/bin"
 export GOPATH="$HOME/go/"
-
+export ZSH="$HOME/.oh-my-zsh"
 # ~~~~~~~~~~~~~~~ Path configuration ~~~~~~~~~~~~~~~~~~~~~~~~
 PATH="$PATH:$HOME/.local/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.cask/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
