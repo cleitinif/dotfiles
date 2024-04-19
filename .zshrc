@@ -1,9 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 #
 # ~/.zshrc
@@ -30,6 +30,7 @@ export GITUSER="cleitinif"
 export GOBIN="$HOME/.local/bin"
 export GOPATH="$HOME/go/"
 export ZSH="$HOME/.oh-my-zsh"
+
 # ~~~~~~~~~~~~~~~ Path configuration ~~~~~~~~~~~~~~~~~~~~~~~~
 PATH="$PATH:$HOME/.local/bin:/home/linuxbrew/.linuxbrew/bin:$HOME/.cask/bin"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -65,6 +66,8 @@ fi
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(fzf --zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
