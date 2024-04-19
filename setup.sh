@@ -24,7 +24,7 @@ ln -sf "$PWD/.bash_profile" "$HOME/.bash_profile"
 ln -sf "$PWD/k9s/skin.yml" "$XDG_CONFIG_HOME"/k9s/skins/skin.yml
 ln -sf "$PWD/alacritty.toml" "$XDG_CONFIG_HOME"/alacritty/alacritty.toml
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
-#ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
+ln -sf "$PWD/better-vim" "$XDG_CONFIG_HOME"/better-vim
 
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

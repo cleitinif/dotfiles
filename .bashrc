@@ -8,7 +8,9 @@
 # Set to superior editing mode
 set -o vi
 
-# keybinds
+# Keybindings
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
 bind -x '"\C-l":clear'
 # ~~~~~~~~~~~~~~~ Environment Variables ~~~~~~~~~~~~~~~~~~~~~~~~
 
