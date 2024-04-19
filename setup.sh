@@ -36,7 +36,7 @@ sudo apt install gcc g++ unzip apt-transport-https ca-certificates curl ripgrep 
 # Install alacritty in MacOS
 # brew install --cask alacritty
 
-brew install derailed/k9s/k9s starship kubectl go lazygit fd fzf gh tmux
+brew install derailed/k9s/k9s starship kubectl go lazygit fd fzf gh tmux fluxcd/tap/flux
 
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
