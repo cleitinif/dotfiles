@@ -24,7 +24,7 @@ ln -sf "$PWD/.bash_profile" "$HOME/.bash_profile"
 ln -sf "$PWD/k9s/skin.yml" "$XDG_CONFIG_HOME"/k9s/skins/skin.yml
 ln -sf "$PWD/alacritty.toml" "$XDG_CONFIG_HOME"/alacritty/alacritty.toml
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
-ln -sf "$PWD/better-vim" "$XDG_CONFIG_HOME"/better-vim
+ln -sf "$PWD/better-vim/better-vim.lua" "$XDG_CONFIG_HOME"/better-vim/better-vim.lua
 
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -40,6 +40,8 @@ brew install derailed/k9s/k9s starship kubectl go lazygit fd fzf gh tmux fluxcd/
 
 # Install NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+corepack enable pnpm
 
 echo "Insert your Bettervim license"
 read bettervim_license
